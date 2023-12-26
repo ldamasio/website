@@ -20,19 +20,19 @@ jobs:
       - name: Build and push Docker frontend image
         uses: docker/build-push-action@v5.0.0
         with: 
-          context: ./frontends/web
-          file: ./frontends/web/docker/Dockerfile
+          context: ./frontend
+          file: ./frontend/Dockerfile
           push: true
           tags: | 
-            ldamasio/rbs-frontend:0.0.${{github.run_number}}
-            ldamasio/rbs-frontend:latest
+            ldamasio/lda-frontend:0.0.${{github.run_number}}
+            ldamasio/lda-frontend:latest
 
       - name: Build and push Docker monolith backend image
         uses: docker/build-push-action@v5.0.0
         with: 
-          context: ./backends/monolith
-          file: ./backends/monolith/docker/Dockerfile
+          context: ./backend
+          file: ./backend/Dockerfile
           push: true
           tags: | 
-            ldamasio/rbs-backend-monolith:1.0.${{github.run_number}}
-            ldamasio/rbs-backend-monolith:latest
+            ldamasio/lda-backend-monolith:1.0.${{github.run_number}}
+            ldamasio/lda-backend-monolith:latest

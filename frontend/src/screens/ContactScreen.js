@@ -7,8 +7,8 @@ function ContactScreen() {
   const works = [
   'Email: ldamasio@gmail.com',
   'Twitter: @ldamasio',
-  'Instagram: @leandrodamasio.com.br',
-  'Linkedin: https://www.linkedin.com/in/ldamasio/'
+  'Instagram: @ldamasio.rbx',
+  'Linkedin: /in/ldamasio'
   ];
   
   return (

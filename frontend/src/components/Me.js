@@ -3,18 +3,35 @@ function Me() {
   return (
     <div className="me">
       <p>
-        <h2>
-          Full Stack Developer
-        </h2>
         <h4>
-          Creator of Robson Bot
+          Full Stack Developer
+        </h4>
+        <h6>
+          Cloud Engineer          
+        </h6>
+        <h6>
+          Data Analyst          
+        </h6>
+        <h6>
+          Open Source Entrepreneur          
+        </h6>
+        <h4>
+          Robson Bot Creator
         </h4>
       </p>
       <p>
         <img src="./ldamasio.png" className="foto" alt="Leandro Damasio" />
       </p>
       <p>
-        <h5>Leandro Damasio, MSc.</h5>
+        <h5>
+          Leandro Damasio, MSc.
+        </h5>
+        <h6>
+          Analista Desevolvedor Sr
+        </h6>
+        <h6>
+          Stefanini / Fapesp
+        </h6>
       </p>
     </div>
   )

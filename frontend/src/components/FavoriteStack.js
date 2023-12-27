@@ -23,6 +23,8 @@ function FavoriteStack() {
     'Apache Nifi',
     'Apache Druid',
     'Apache Superset',
+    'Apache Lucene',
+    'Apache Solr'
   ];
 
   const tools_deepstorage = [
@@ -40,39 +42,39 @@ function FavoriteStack() {
 
   return (
     <div>
-      <h2>Favorite Stack</h2>            
+      <h4>Favorite Stack:</h4>            
       <p>
-        <h4>Web Development</h4>
+        <h6>Web Development</h6>
         <ul>
           { tools_webdev.map( (tool_webdev) => <li>{ tool_webdev }</li>) }
         </ul>
       </p>
       <p>
-        <h4>Data Storage</h4>
+        <h6>Data Storage</h6>
         <ul>
           { tools_database.map( (tool_database) => <li>{ tool_database }</li>) }
         </ul>
       </p>
       <p>
-        <h4>Queues</h4>
+        <h6>Queues</h6>
         <ul>
           { tools_queues.map( (tool_queues) => <li>{ tool_queues }</li>) }
         </ul>
       </p>
       <p>
-        <h4>Data Warehousing</h4>
+        <h6>Data Warehousing</h6>
         <ul>
           { tools_datawarehousing.map( (tool_datawarehousing) => <li>{ tool_datawarehousing }</li>) }
         </ul>
       </p>
       <p>
-        <h4>Deep Stoage</h4>
+        <h6>Deep Stoage</h6>
         <ul>
           { tools_deepstorage.map( (tools_deepstorage) => <li>{ tools_deepstorage }</li>) }
         </ul>
       </p>
       <p>
-        <h4>DevOps</h4>
+        <h6>DevOps</h6>
         <ul>
           { tools_devops.map( (tool_devops) => <li>{ tool_devops }</li>) }
         </ul>

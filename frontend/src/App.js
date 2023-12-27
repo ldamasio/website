@@ -9,6 +9,11 @@ import PostDetailScreen from './screens/blog/PostDetailScreen'
 import HomeAdminScreen from "./screens/admin/HomeAdminScreen"
 import NoPageScreen from "./screens/NoPageScreen"
 
+function Blog() {
+  window.location.href = 'https://ldamasio.wordpress.com';
+  return null;
+}
+
 function App() {
   return (
     <>
@@ -19,8 +24,7 @@ function App() {
         <Route path="/works" element={<WorksScreen/>} />
         <Route path="/robson-bot" element={<RobsonScreen/>} />
         <Route path="/contact" element={<ContactScreen/>} />
-        <Route path="/blog" element={<PostListScreen/>} />
-        <Route path="/blog/:slug" element={<PostDetailScreen/>} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/admin" element={<HomeAdminScreen/>} />
         <Route path="*" element={<NoPageScreen/>} />
       </Routes>

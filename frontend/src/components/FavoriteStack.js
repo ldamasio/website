@@ -68,7 +68,7 @@ function FavoriteStack() {
         </ul>
       </p>
       <p>
-        <h6>Deep Stoage</h6>
+        <h6>Deep Storage</h6>
         <ul>
           { tools_deepstorage.map( (tools_deepstorage) => <li>{ tools_deepstorage }</li>) }
         </ul>

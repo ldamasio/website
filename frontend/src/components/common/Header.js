@@ -13,7 +13,7 @@ function Header() {
         <Container>
           <LinkContainer to ="/">
             <Navbar.Brand className="headerLogo">
-              Leandro Damasio
+              Λεάντρο Δαμάσιο
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -48,7 +48,7 @@ function Header() {
               </LinkContainer>
               <LinkContainer to='/contact'>
                 <Nav.Link className="headerDropdown">
-                  Contato
+                  Contact
                 </Nav.Link>
               </LinkContainer>
             </Nav>

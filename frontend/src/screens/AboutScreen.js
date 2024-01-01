@@ -19,7 +19,7 @@ function AboutScreen() {
         <Container>
           <h1>About</h1>
           <ul>
-            { about_items.map( (about_item) => <li>{ about_item }</li>) }
+            { about_items.map( (about_item) => <li className="about">{ about_item }</li>) }
           </ul>
         </Container>
       </main>

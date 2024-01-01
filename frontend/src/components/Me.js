@@ -27,7 +27,7 @@ function Me() {
           Leandro Damasio, MSc.
         </h5>
         <h6>
-          Analista Desevolvedor Sr
+        Senior Development Analyst
         </h6>
         <h6>
           Stefanini / Fapesp

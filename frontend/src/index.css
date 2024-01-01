@@ -39,7 +39,7 @@ h2 { font-size: 5vh }
 h3 { font-size: 4vh }
 h4 { font-size: 3vh }
 h5 { font-size: 3vh }
-ul, ul li { font-size: 2vh}
+ul, ul li { font-size: 2vh }
 App {
   text-align: center;
 }
@@ -127,3 +127,7 @@ a.App-link:active { color: red }
 .me {
   text-align: center;
 }
+.about { font-size: 3vh }
+.works { font-size: 3vh }
+.robson { font-size: 3vh }
+.contact { font-size: 3vh }

@@ -4,11 +4,15 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 
 function ContactScreen() {
 
-  const works = [
-  'Email: ldamasio@gmail.com',
-  'Twitter: @ldamasio',
-  'Instagram: @ldamasio.rbx',
-  'Linkedin: /in/ldamasio'
+  const contacts = [
+  'Professional Email: ldamasio@stefanini.com',
+  'Professional Email: ldamasio@fapesp.br',
+  'Personal Linkedin Profile: https://linkedin.com/in/ldamasio',
+  'Personal Email: ldamasio@gmail.com',
+  'Personal Github Profile: https://github.com/ldamasio/',
+  'Personal Twitter Profile: https://twitter.com/ldamasio',
+  'Personal Instagram Profile: https://instagram.com/ldamasio',
+  'Personal Website: http://leandrodamasio.com'
   ];
   
   return (
@@ -18,9 +22,9 @@ function ContactScreen() {
       </header>
       <main className="App-body">
         <Container>
-          <h1>Contact</h1>
+          <h1>Contacts</h1>
           <ul>
-            { works.map( (work) => <li>{ work }</li>) }
+            { contacts.map( (contact) => <li className="contact">{ contact }</li>) }
           </ul>
         </Container>
       </main>

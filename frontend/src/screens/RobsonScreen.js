@@ -5,10 +5,16 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 
 function RobsonScreen() {
 
-  const works = [
+  const features = [
   'Robson is a robot specialized in cryptocurrency trading',
-  'Programmed to monitor the market in real time, make intelligent probabilistic analyzes for decision making, automatically, on buying or selling assets, with risk management'
-  ];
+  'Programmed to monitor the market in real time',
+  'Strategy and operations-oriented BTC/USDT data mining model',
+  'Probabilistic analyzes for decision making',
+  'Automatic buying or selling digital assets',
+  'Ruled by the Dealer method\'s risk management',
+  'Associated marketing tool for disseminating signals',
+  'Source code is entirely open and free'
+];
   
   return (
     <div className="App">
@@ -19,11 +25,16 @@ function RobsonScreen() {
         <Container>
           <h1>Robson Bot</h1>
           <ul>
-            { works.map( (work) => <li>{ work }</li>) }
+            { features.map( (feature) => <li className="robson">{ feature }</li>) }
           </ul>
+          <h3>Links</h3>
           <a href="https://: www.robson.srv.br/" target="_blank" rel="noopener noreferrer">
-              Robson Bot
+              Robson Bot Professional Edition
           </a>
+          <a href="https://: www.robson.srv.br/" target="_blank" rel="noopener noreferrer">
+              Public Repository
+          </a>
+
         </Container>
       </main>
       <Footer />

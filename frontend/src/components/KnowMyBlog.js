@@ -5,19 +5,19 @@ function KnowMyBlog() {
 
   return (
     <div>
-      <h2> Artigos</h2>
-      <h6>Conheça o meu&nbsp;
+      <h2> Articles</h2>
+      <h6>Know&nbsp;
         <a
           className="App-link"
           href="blog"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Blog
+          my blog
         </a>
       </h6>
       <h5>
-        Último artigo: 
+        Last article: 
       </h5>
       <h1>
         <LastArticleTitle />

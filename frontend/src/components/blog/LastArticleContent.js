@@ -15,11 +15,8 @@ function LastArticleContent() {
   }, []);
 
 
-  return (
-    <span>
-      { content }
-    </span>
-  )
+  return <div dangerouslySetInnerHTML={{ __html: content }} />
+
 }
 
 export default LastArticleContent

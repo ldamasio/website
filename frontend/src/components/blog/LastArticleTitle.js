@@ -16,9 +16,9 @@ function LastArticleTitle() {
 
 
   return (
-    <span>
+    <div className="articleTitle">
       { title }
-    </span>
+    </div>
   )
 }
 

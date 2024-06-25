@@ -1,29 +1,49 @@
 
 function FavoriteStack() {
 
+  const tools_lang = [
+    'Python',
+    'Javascript',
+    'Java',
+    'Typescript',
+    'Dart',
+    'Kotlin'
+  ];
+
   const tools_webdev = [
     'Django',
     'FastAPI',
     'NodeJS',
-    'ReactJS'
+    'ReactJS',
+    'NextJS',
+    'NestJS'
   ];
 
   const tools_database = [
     'PostgreSQL',
     'MongoDB',
-    'MySQL'
+    'MySQL / MariaDB'
+  ];
+
+  const tools_querylang = [
+    'SQL',
+    'GraphQL',
+    'XPath'
   ];
 
   const tools_queues = [
-    'Redis',
     'RabbitMQ',
-    'Apache Kafka'
+    'Apache Kafka',
+    'Redis'
   ];
 
   const tools_datawarehousing = [
     'Apache Nifi',
     'Apache Druid',
-    'Apache Superset',
+    'Apache Superset'
+  ];
+
+  const tools_searchengine = [
     'Apache Lucene',
     'Apache Solr'
   ];
@@ -45,15 +65,33 @@ function FavoriteStack() {
     <div>
       <h4>Favorite Stack:</h4>            
       <p>
-        <h6>Web Development</h6>
+        <h6>Languages</h6>
+        <ul>
+          { tools_lang.map( (tool_lang) => <li>{ tool_lang }</li>) }
+        </ul>
+      </p>
+      <p>
+        <h6>Web Development libs & frameworks</h6>
         <ul>
           { tools_webdev.map( (tool_webdev) => <li>{ tool_webdev }</li>) }
         </ul>
       </p>
       <p>
-        <h6>Data Storage</h6>
+        <h6>Database</h6>
         <ul>
           { tools_database.map( (tool_database) => <li>{ tool_database }</li>) }
+        </ul>
+      </p>
+      <p>
+        <h6>Deep Storage</h6>
+        <ul>
+          { tools_deepstorage.map( (tool_deepstorage) => <li>{ tool_deepstorage }</li>) }
+        </ul>
+      </p>
+      <p>
+        <h6>Query Languages</h6>
+        <ul>
+          { tools_querylang.map( (tool_deepstorage) => <li>{ tool_deepstorage }</li>) }
         </ul>
       </p>
       <p>
@@ -69,9 +107,9 @@ function FavoriteStack() {
         </ul>
       </p>
       <p>
-        <h6>Deep Storage</h6>
+        <h6>Search Engine</h6>
         <ul>
-          { tools_deepstorage.map( (tools_deepstorage) => <li>{ tools_deepstorage }</li>) }
+          { tools_searchengine.map( (tool_searchengine) => <li>{ tool_searchengine }</li>) }
         </ul>
       </p>
       <p>

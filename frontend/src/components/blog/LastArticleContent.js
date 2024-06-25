@@ -15,7 +15,7 @@ function LastArticleContent() {
   }, []);
 
 
-  return <div dangerouslySetInnerHTML={{ __html: content }} />
+  return <div dangerouslySetInnerHTML={{ __html: content }} className="articleContent" />
 
 }
 

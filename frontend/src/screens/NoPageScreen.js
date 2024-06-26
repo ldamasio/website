@@ -1,6 +1,6 @@
 import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 
 function NoPageScreen() {
 

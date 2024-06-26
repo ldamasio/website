@@ -11,7 +11,7 @@ function Header() {
     <header className="App-header">
       <Navbar className="App-header" collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Container>
-          <LinkContainer to ="/">
+          <LinkContainer to="/">
             <Navbar.Brand className="headerLogo">
               Λεάντρο Δαμάσιο
             </Navbar.Brand>
@@ -29,10 +29,10 @@ function Header() {
                   Works
                 </Nav.Link>
               </LinkContainer>
-              <NavDropdown 
-                title="Projects" 
+              <NavDropdown
+                title="Projects"
                 id="collasible-nav-dropdown"
-              >             
+              >
                 <LinkContainer to='/robson-bot'>
                   <NavDropdown.Item className="headerDropdow  n">
                     Robson Bot
@@ -41,11 +41,13 @@ function Header() {
               </NavDropdown>
             </Nav>
             <Nav>
-              <LinkContainer to='/blog'>
-                <Nav.Link className="headerDropdown">
-                  Blog
-                </Nav.Link>
-              </LinkContainer>
+              <a href="https://ldamasio.wordpress.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="headerDropdown m-2"
+              >
+                Blog
+              </a>
               <LinkContainer to='/contact'>
                 <Nav.Link className="headerDropdown">
                   Contact

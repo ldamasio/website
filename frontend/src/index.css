@@ -93,7 +93,7 @@ App {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #d9d9d9;
 }
 
 a:link {
@@ -161,7 +161,7 @@ a.App-link:active {
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #d9d9d9;
   font-family: "PoppinsRegular";
 }
 
@@ -181,7 +181,7 @@ a.App-link:active {
 }
 
 .nav-item .dropdown-item {
-  color: #fff;
+  color: #d9d9d9;
   background: #333
 }
 
@@ -220,9 +220,94 @@ a.App-link:active {
   text-align: left;
 }
 
+.contacts-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-item {
+  background-color: #282c34;
+  border: 1px solid #333333;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.contact-icon {
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.contact-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: #00aced;
+  text-decoration: underline;
+}
+
+.contact-text-light {
+  color: #ffffff;
+}
+
+.contact-neon-button {
+  background-color: #00ff00; /* Cor de fundo inicial */
+  color: #ffffff; /* Cor do texto */
+  margin-bottom: 50px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-neon-button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.2); /* Cor do brilho */
+  transition: all 0.6s ease-out;
+  border-radius: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.contact-neon-button:hover:before {
+  width: 0;
+  height: 0;
+}
+
+.contact-neon-button:hover {
+  background-color: #00ff00; /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra ao passar o mouse */
+  color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-icon {
+    margin-bottom: 10px;
+  }
+}
+
 .App-footer {
   background-color: #282c34;
-  color: white;
+  color: #d9d9d9;
   font-family: "PoppinsRegular";
   font-size: 16px;
   justify-content: center;
@@ -246,9 +331,6 @@ a.App-link:active {
   font-size: 3vh
 }
 
-.contact {
-  font-size: 3vh
-}
 .about-me {
   padding: 40px;
   color: #d9d9d9;
@@ -293,7 +375,7 @@ a.App-link:active {
 }
 
 .rbs-neon-link:hover {
-  color: #9f00ff; /* Cor roxo neón */
+  color: #9f00ff;
 }
 
 .rbs-center-image {
